@@ -1,0 +1,542 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Styles */
+nav {
+  background: #ed4203;
+  color: rgb(14, 14, 14);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #080808;
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .nav-links a {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  color: #101111;
+}
+
+nav .nav-links button {
+  background: #291918;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav .nav-links button:hover {
+  background: #c0392b;
+}
+
+/* Form Styles */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #1abc9c;
+}
+
+/* Product Grid Styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+.product-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.product-card button {
+  background: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #16a085;
+}
+
+/* Cart Styles */
+.cart {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.cart h2 {
+  color: #2c3e50;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart li:last-child {
+  border-bottom: none;
+}
+
+/* Profile Page Styles */
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile-actions .edit-profile-btn {
+  background: #1abc9c;
+  color: white;
+}
+
+.profile-actions .edit-profile-btn:hover {
+  background: #16a085;
+}
+
+.profile-actions .change-password-btn {
+  background: #3498db;
+  color: white;
+}
+
+.profile-actions .change-password-btn:hover {
+  background: #2980b9;
+}
+
+.order-history {
+  margin-top: 20px;
+}
+
+.order-history h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.order-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-history th,
+.order-history td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-history th {
+  background: #2c3e50;
+  color: white;
+}
+
+.order-history tr:hover {
+  background: #f4f4f9;
+}
+
+.order-history p {
+  color: #666;
+  text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f9;
+}
+
+.login-container h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+.login-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-container form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container form button {
+  width: 100%;
+  padding: 10px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container form button:hover {
+  background: #1abc9c;
+}
+
+.login-container p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.login-container p a {
+  color: #1abc9c;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.login-container p a:hover {
+  color: #16a085;
+}
+/* Signup Page Styles (if needed) */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f9;
+}
+
+.signup-container h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.signup-container form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.signup-container form div {
+  margin-bottom: 15px;
+}
+
+.signup-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.signup-container form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-container form button {
+  width: 100%;
+  padding: 10px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-container form button:hover {
+  background: #1abc9c;
+}
+
+.signup-container p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.signup-container p a {
+  color: #1abc9c;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.signup-container p a:hover {
+  color: #16a085;
+}
+/* Home Page Styles with Video Background */
+/* Home Page Styles with Video Background */
+.home-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire background */
+  z-index: -1; /* Places the video behind the content */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensures the content is above the video */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2em;
+}
+/* About Page Styles */
+.about-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-container h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #666;
+}
+
+.about-container ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
